@@ -46,11 +46,17 @@
               </v-list-item-icon>
               <v-list-item-title>clients</v-list-item-title>
             </v-list-item>
-            <v-list-item link to="checkout">
+            <v-list-item link to="/providers">
               <v-list-item-icon>
                 <v-icon>mdi-star</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>checkout</v-list-item-title>
+              <v-list-item-title>providers</v-list-item-title>
+            </v-list-item>
+            <v-list-item link to="/transactions">
+              <v-list-item-icon>
+                <v-icon>mdi-credit-card</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>transactions</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-navigation-drawer>

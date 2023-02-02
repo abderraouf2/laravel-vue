@@ -1,7 +1,5 @@
 <template>
     
-
-
     <v-dialog
                     transition="dialog-bottom-transition"
                     max-width="50vw"
