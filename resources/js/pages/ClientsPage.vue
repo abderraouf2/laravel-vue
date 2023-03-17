@@ -13,8 +13,8 @@
 
 <script lang="js">
         import SideBar from '../components/SideBar.vue';
-        import addClient from '../components/addClient.vue';
-        import UsersTable from '../components/UsersTable.vue';
+        import addClient from '../components/clients/addClient.vue';
+        import UsersTable from '../components/clients/UsersTable.vue';
     export default{
         components : {
             SideBar,

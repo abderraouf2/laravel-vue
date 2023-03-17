@@ -13,10 +13,9 @@
 </template>
 
 <script>
-    import ProductList from '../components/ProductList';
+    import ProductList from '../components/products/ProductList.vue';
     import SideBar from '../components/SideBar.vue';
-    import Button from '../components/Button.vue';
-    import AddProduct from './AddProduct.vue'
+    import AddProduct from '../components/products/AddProduct.vue'
     export default{
         data: () => ({
         absolute: true,
@@ -26,7 +25,6 @@
         components : {
             SideBar,
             ProductList,
-            Button,
             AddProduct
         }
     }

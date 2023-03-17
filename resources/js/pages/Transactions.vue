@@ -132,7 +132,7 @@ export default {
             Products: [],
             quantity:null,
             total:0,
-            productsList: [{name:'', quantity:0, total: 0}]
+            productsList: [{name:'', quantity:'', total: 0}]
         }
     },
     components :{
@@ -151,8 +151,10 @@ export default {
         },
         async addProduct (selectedProduct) {
             let valid = false;
-            valid = await this.$validator.validateAll()
-            if (valid) {
+            valid = await this.$validator.validateAll();
+            var index = this.productsList.findIndex(product => product.name === selectedProduct.name)
+
+            if (valid && !index ) {
                 this.productsList.name = selectedProduct.name
                 this.productsList.quantity = selectedProduct.quantity
                 this.productsList.total = selectedProduct.price

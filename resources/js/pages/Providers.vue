@@ -11,8 +11,8 @@
 
 <script>
 import SideBar from '../components/SideBar.vue';
-import addProvider from '../components/addProvider.vue';
-import providersList from '../components/providersList.vue';
+import addProvider from '../components/providers/addProvider.vue';
+import providersList from '../components/providers/providersList.vue';
     export default {
         components :{
             SideBar,
